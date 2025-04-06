@@ -60,7 +60,7 @@ npm start
 ```
 ## API Integration
 
-The frontend integrates with the StudyHub backend API, which provides the following endpoints:
+### The frontend integrates with the StudyHub backend API, which provides the following endpoints:
 -
 
 ## Backend Repository
