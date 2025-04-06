@@ -1,0 +1,65 @@
+.profile-form-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #82aac7;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+h2 {
+  text-align: center;
+  color: #022b68;
+  margin-bottom: 15px;
+}
+.current-image {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #022b68;
+}
+.label-input-wrapper {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+.input-fields {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.input-fields:focus {
+  border-color: #022b68;
+  outline: none;
+}
+.profile-btn {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 15px auto;
+}
+.profile-btn:hover{
+  background-color:#adceff;
+}
+.error,
+.changedDetails {
+  text-align: center;
+  color: #990f00;
+  margin-top: 10px;
+}
+.changedDetails {
+  color: #022b68;
+}
+.delete-btn {
+  background-color: #990f00;
+  width: 20%;
+  color: #ffffff;
+}

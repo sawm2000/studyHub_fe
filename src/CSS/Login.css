@@ -1,0 +1,12 @@
+.sign-up-link {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color:#022b68;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.sign-up-link:hover {
+  color: #0848a7;
+  text-decoration: underline;
+}

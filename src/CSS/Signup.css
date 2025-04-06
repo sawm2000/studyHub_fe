@@ -1,0 +1,79 @@
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #5f5d5d;
+}
+label {
+  color:#022b68;
+}
+.form-wrapper {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #82aac7;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-name {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #022b68;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-fields {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.input-fields:focus {
+  border-color: #000000;
+  outline: none;
+}
+.join-btn {
+  background-color: #022b68;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.join-btn:hover {
+  background-color: #0c50b8;
+}
+.sign-in-link {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: #022b68;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.sign-in-link:hover {
+  color:#022b68;
+  text-decoration: underline;
+}
+p {
+  text-align: center;
+  margin: 10px 0;
+}
+.loading {
+  color:#022b68;
+}
+.error {
+  color: #990f00;
+}
+.success {
+  color: #022b68;
+}
+#account-text {
+  color:#022b68;
+  margin-bottom: 0px;
+}
