@@ -7,7 +7,11 @@
     border-radius: 5px;
     font-size: 16px;
   }
-  
+  video {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+  }
   .videos-section,
   .rooms-section {
     margin-top: 40px;

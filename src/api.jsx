@@ -60,14 +60,29 @@ export const deleteUser = (id) => {
 };
 
 export const addVideo = (details, id) => {
-  console.log(details)
   return baseApi.post(`/video/${id}`, details).then((response) => {
     return response.data;
   });
 };
 
-export const viewVideo = (id) => {
-  return baseApi.put(`/video/${id}`).then((response) => {
+export const getVideo = (id) => {
+  return baseApi.get(`/video/${id}`).then((response) => {
+    return response.data;
+  });
+};
+
+export const deleteVideo = (video_id, id) => {
+  return baseApi.delete(`/video/${id}`,{ data: video_id }).then(() => {});
+};
+
+export const likeVideo = (video_id, id) => {
+  return baseApi.post(`/video/${id}/like`, video_id).then((response) => {
+    return response.data;
+  });
+};
+
+export const unlikeVideo = (video_id, id) => {
+  return baseApi.post(`/video/${id}/unlike`, video_id).then((response) => {
     return response.data;
   });
 };

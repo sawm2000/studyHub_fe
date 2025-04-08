@@ -7,6 +7,7 @@ import Login from "./Login";
 import Signup from "./Signup"
 import Profile from "./Profile";
 import AddVideo from "./AddVideo";
+import VideoCard from "./VideoCard";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/addVideo" element={<AddVideo />} />
+          <Route path="/video/:id" element={<VideoCard />} />
         </Routes>
         </UserContext.Provider>
     </>

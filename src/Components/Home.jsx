@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { getAllVideos, getAllRooms, viewVideo } from "../api";
+import { getAllVideos, getAllRooms, getVideo } from "../api";
 import UserContext from "../Contexts/UserContext";
 import "../CSS/Home.css";
 
@@ -58,11 +58,8 @@ function Home() {
       query: event.target.value,
     }));
   };
-  function handleView(video){
-    viewVideo(video._id).then(()=>{
-    })
-  }
 
+  
   return (
     <div className="home">
       <div className="search-section">
@@ -97,8 +94,10 @@ function Home() {
               {videos.length > 0 ? (
                 videos.map((video) => (
                   <div key={video._id} className="video-item">
-                    <h3>{video.title}</h3>
-                    <video  onPlay={() => handleView(video)} src={video.fileUrl} controls></video>
+                    <Link to={`/video/${video._id}`} className="video-title-link">
+                  <h3>{video.title}</h3>
+                </Link>
+                    <video src={video.fileUrl} controls></video>
                   </div>
                 ))
               ) : (
