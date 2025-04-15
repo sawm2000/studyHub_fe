@@ -59,11 +59,13 @@ function Home() {
     }));
   };
 
-  
+
   return (
     <div className="home">
       <div className="search-section">
+      <label htmlFor="searchInput" className="search-label">Search</label>
         <input
+         id="searchInput"
           type="text"
           placeholder="Search..."
           value={searchQuery}

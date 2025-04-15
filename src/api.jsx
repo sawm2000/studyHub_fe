@@ -6,13 +6,13 @@ const baseApi = axios.create({
 
 export const getAllVideos = (searchQuery, tags, sortBy, orderBy) => {
   let endPointString = "/video";
-   const queries = {
+  const queries = {
     search: searchQuery,
-   tags,
-  sortBy,
-   orderBy,
-   };
- 
+    tags,
+    sortBy,
+    orderBy,
+  };
+
   return baseApi.get(endPointString, { params: queries }).then((response) => {
     return response.data.videos;
   });
@@ -72,7 +72,7 @@ export const getVideo = (id) => {
 };
 
 export const deleteVideo = (video_id, id) => {
-  return baseApi.delete(`/video/${id}`,{ data: video_id }).then(() => {});
+  return baseApi.delete(`/video/${id}`, { data: video_id }).then(() => {});
 };
 
 export const likeVideo = (video_id, id) => {
@@ -83,6 +83,24 @@ export const likeVideo = (video_id, id) => {
 
 export const unlikeVideo = (video_id, id) => {
   return baseApi.post(`/video/${id}/unlike`, video_id).then((response) => {
+    return response.data;
+  });
+};
+
+export const getComments = (id) => {
+  return baseApi.get(`/video/${id}/comment`).then((response) => {
+    return response.data;
+  });
+};
+
+export const addComment = (video_id, id) => {
+  return baseApi.post(`/video/${id}/comment`, video_id).then((response) => {
+    return response.data;
+  });
+};
+
+export const deleteComment = (video_id, id) => {
+  return baseApi.delete(`/video/${id}/comment`, { data: video_id }).then((response) => {
     return response.data;
   });
 };

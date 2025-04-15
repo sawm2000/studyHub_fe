@@ -39,7 +39,9 @@ function Header() {
                   className="profile-image"
                 />
               ) : (
-                <span className="default-avatar">👤</span>
+                <div className="default-avatar">
+                {loggedInUser.username.charAt(0).toUpperCase() || "U"}
+              </div>
               )}
             </Link>
             <Link to="/" onClick={handleLogout} className="logout-link">

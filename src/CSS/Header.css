@@ -52,11 +52,16 @@
   margin-left: 10px;
 }
 .default-avatar {
+  width: 40px;
+  height: 40px;
   font-size: 20px;
   background-color: #d6e5f0;
   border-radius: 50%;
-  padding: 10px;
   border: 1px solid #022b68;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-weight: bold; 
 }
 .logout-link {
   color: #333;

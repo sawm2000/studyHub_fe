@@ -110,7 +110,7 @@ function Profile() {
         <h2> My Profile</h2>
         <img className="current-image" src={image} alt="profile avatar" />
         <form className="profile-form" onSubmit={handelSubmit}>
-          <div className="label-input-wrapper">
+          <div id="label-input-wrapper">
             <label htmlFor="firstname">Your First name:</label>
             <input
               className="input-fields"
@@ -155,11 +155,13 @@ function Profile() {
               onChange={handelImage}
             />
           </div>
-          {error ? <p>{error}</p> : null}
-          {changedDetails ? <p>Your details have been changed</p> : null}
+          {error ? <p className="error">{error}</p> : null}
+          {changedDetails ? <p className="success">Your details have been changed</p> : null}
           <button className="profile-btn">Make changes</button>
         </form>
-        <div className="label-Input-wrapper">
+
+
+        <div className="label-input-wrapper">
           <label htmlFor="password">New Password</label>
           <input
             className="input-fields"
@@ -168,7 +170,7 @@ function Profile() {
             onChange={handleChange}
           />
         </div>
-        {changedPassword ? <p>Your password has been changed</p> : null}
+        {changedPassword ? <p className="success">Your password has been changed</p> : null}
         <button className="profile-btn" onClick={handelPassword}>
           Change password
         </button>

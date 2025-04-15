@@ -1,11 +1,18 @@
 .profile-form-wrapper {
-  max-width: 600px;
+  max-width: 400px;
   margin: 20px auto;
   padding: 20px;
   background-color: #82aac7;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; 
+}
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
 }
 h2 {
   text-align: center;
@@ -22,14 +29,20 @@ h2 {
 }
 .label-input-wrapper {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction:column; 
+  width: 95%;
 }
-label {
+label{
   display: block;
   font-weight: bold;
+  color: #022b68;
+  margin-bottom: 5px;
 }
 .input-fields {
   width: 95%;
-  padding: 10px;
+  padding: 12px;
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
